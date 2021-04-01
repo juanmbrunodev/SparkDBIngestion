@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jmb.examples</groupId>
-    <artifactId>FileFormats</artifactId>
+    <artifactId>spark-db-ingestion</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
