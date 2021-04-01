@@ -26,6 +26,8 @@ public class DBIngestion {
 
     private void init() throws Exception {
 
+        SparkConf appConfig = new SparkConf().set("spark.testing.memory", "900000000");
+
         DerbyDBManager dbManager = new DerbyDBManager();
 
         //Start the embedded Derby DB (in memory) - Runs also INSERT queries
@@ -34,6 +36,7 @@ public class DBIngestion {
         //Create the Spark Session
         SparkSession session = SparkSession.builder()
                 .appName("SparkDBIngestion")
+                .config(appConfig)
                 .master("local").getOrCreate();
 
         //Create Properties with DB connection information
