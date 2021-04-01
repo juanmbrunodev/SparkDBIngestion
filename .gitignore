@@ -37,3 +37,12 @@ out/
 ## MacOS Files
 ##############################
 .DS_Store
+
+##############################
+## DerbyDB Files
+##############################
+
+firstdb
+firstdb/
+derby.log
+
